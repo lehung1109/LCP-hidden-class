@@ -6,27 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    rel="stylesheet preload"
+    href="swiper-bundle.min.css"
+    as="style"
   />
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./style.css" />
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0809e94f-f2c3-47a3-80ce-64238f892755" data-blockingmode="auto" type="text/javascript"></script>
+  <link rel="stylesheet preload" href="./normalize.css" as="style">
+  <link rel="stylesheet preload" href="./style.css" as="style" />
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+      </ul>
+    </nav>
+  </header>
+  
   <!-- Slider main container -->
   <div class="swiper">
+
+    <div class="swiper-loading"></div>
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper hidden">
       <!-- Slides -->
       <div class="swiper-slide">
-        <img src="https://fastly.picsum.photos/id/237/1920/960.jpg?hmac=41RTVCV2aHS-IO_CxKAbFKhv47vVIoQQc1vP63T0gCI" alt="" width="1920" height="960">
+        <img src="1.jpg" alt="" width="1920" height="960">
+
+        <h2 class="swiper-title">Lorem Ipsum 1</h2>
       </div>
       <div class="swiper-slide">
         <img src="https://fastly.picsum.photos/id/238/1920/960.jpg?hmac=KtOBoecNgQJwGRsXHbE3F7dNeNlhU__3bYE7gAj49SA" alt="" width="1920" height="960">
+
+        <h2 class="swiper-title">Lorem Ipsum 2</h2>
       </div>
       <div class="swiper-slide">
         <img src="https://fastly.picsum.photos/id/239/1920/960.jpg?hmac=qI7DbUN4viDuufgSSzXl40o0hNhhx840tdsOR-rZENU" alt="" width="1920" height="960">
+
+        <h2 class="swiper-title">Lorem Ipsum 3</h2>
       </div>
     </div>
     <!-- If we need pagination -->
@@ -51,8 +71,6 @@
     <img src="https://fastly.picsum.photos/id/233/1920/960.jpg?hmac=QTolmfiNvjfLqsO8nJtsRgkLMDbbfZotcZ629K__p-A" alt="" width="1920" height="960" loading="lazy">
     <img src="https://fastly.picsum.photos/id/244/1920/960.jpg?hmac=I8XAX2uOnZglKFjo5zlmM6dE9V9YLpKKZnP1gvheI0g" alt="" width="1920" height="960" loading="lazy">
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
+  <script defer src="./script.js"></script>
 </body>
 </html>
